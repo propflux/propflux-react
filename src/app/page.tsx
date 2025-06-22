@@ -96,9 +96,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Packages Section */}
-      <section id=\"packages\" className=\"min-h-screen flex items-center justify-center\">
-        <h2 className=\"text-4xl font-bold\">Packages</h2>
+      {/* Packages Section - High-Fidelity Clone */}
+      <section id=\"packages\" className=\"py-12 md:py-24 bg-black\">
+        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
+          <div className=\"text-center mb-12 md:mb-20\">
+            <h2 className=\"text-4xl md:text-5xl font-extrabold tracking-tight text-white\">
+              Choose Your Plan
+            </h2>
+            <p className=\"mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-400\">
+              Simple, transparent pricing for businesses of all sizes.
+            </p>
+          </div>
+
+          <div className=\"grid grid-cols-1 md:grid-cols-3 gap-8\">
+            {/* Package 1: Core */}
+            <div className=\"border border-gray-700 rounded-lg p-8 flex flex-col text-center shadow-lg hover:shadow-violet-500/20 transition-shadow duration-300\">
+              <h3 className=\"text-2xl font-semibold text-white\">CORE</h3>
+              <p className=\"mt-2 text-gray-400\">Perfect for solo agents getting started.</p>
+              <div className=\"mt-6\">
+                <span className=\"text-5xl font-bold text-white\">$299</span>
+                <span className=\"text-lg text-gray-400\">/mo</span>
+              </div>
+              <ul className=\"mt-8 space-y-4 text-left\">
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Essential automation tools</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Lead reactivation & follow-up</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>CRM integration</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Community support</li>
+              </ul>
+              <div className=\"mt-auto pt-8\">
+                <a href=\"https://calendly.com/propfluxmeeting/30min\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"w-full bg-gray-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-300\">Get Started</a>
+              </div>
+            </div>
+
+            {/* Package 2: Premier */}
+            <div className=\"border-2 border-violet-500 rounded-lg p-8 flex flex-col text-center shadow-2xl shadow-violet-500/20 scale-105\">
+              <h3 className=\"text-2xl font-semibold text-white\">PREMIER</h3>
+              <p className=\"mt-2 text-violet-400\">For growing teams scaling up.</p>
+              <div className=\"mt-6\">
+                <span className=\"text-5xl font-bold text-white\">$599</span>
+                <span className=\"text-lg text-gray-400\">/mo</span>
+              </div>
+              <ul className=\"mt-8 space-y-4 text-left\">
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Everything in Core</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Social media automation suite</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Facebook ad management</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Monthly strategy calls</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Priority support</li>
+              </ul>
+              <div className=\"mt-auto pt-8\">
+                <a href=\"https://calendly.com/propfluxmeeting/30min\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"w-full bg-violet-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-violet-600 transition-colors duration-300\">Get Started</a>
+              </div>
+            </div>
+
+            {/* Package 3: Enterprise */}
+            <div className=\"border border-gray-700 rounded-lg p-8 flex flex-col text-center shadow-lg hover:shadow-violet-500/20 transition-shadow duration-300\">
+              <h3 className=\"text-2xl font-semibold text-white\">ENTERPRISE</h3>
+              <p className=\"mt-2 text-gray-400\">For large organizations requiring custom solutions.</p>
+              <div className=\"mt-6\">
+                <span className=\"text-4xl font-bold text-white\">Custom</span>
+              </div>
+              <ul className=\"mt-8 space-y-4 text-left\">
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Everything in Premier</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>AI Chat Bot included</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Bi-weekly strategy calls</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>3-hour response time</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Custom-built features</li>
+                <li className=\"flex items-center\"><svg className=\"w-6 h-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>Dedicated account manager</li>
+              </ul>
+              <div className=\"mt-auto pt-8\">
+                <a href=\"https://calendly.com/propfluxmeeting/30min\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"w-full bg-gray-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-300\">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FAQ Section */}
